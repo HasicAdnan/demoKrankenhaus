@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #fff;
+    height: 7.6rem;
+    position: fixed !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Dodato z-index da se postavi iznad ostalog sadržaja */
+}
+
+/* ... ostatak stila ostaje nepromenjen ... */
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    top: 1px;
+}
+
+.logo-wrapper h1{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+
+}
+
+.navbar {
+    margin-top: 120px;
+    background-color: #1e8acc!important;
+    font-size: 20px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.soc-net {
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    right: 10px;
+    top: 30px;
+    position: absolute;
+    width: 220px;
+}
+.soc-net li {
+    display: inline-block;
+}
+.soc-net li:last-child {
+    margin: 0;
+}
+.soc-net li a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-image: url("../img/soc-net-sprite.png");
+    text-indent: -9999px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    transition: background-position .3s;
+}
+.facebook {
+    background-color: #3c5a98;
+}
+.facebook:hover {
+    background-position: 0 -40px;
+}
+.twitter {
+    background-color: #00adee;
+    background-position: -40px 0;
+}
+.twitter:hover {
+    background-position: -40px -40px;
+}
+.linked-in {
+    background-color: #069;
+    background-position: -80px 0;
+}
+.linked-in:hover {
+    background-position: -80px -40px;
+}
