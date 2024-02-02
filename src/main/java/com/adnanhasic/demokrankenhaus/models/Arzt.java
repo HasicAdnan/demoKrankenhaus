@@ -19,15 +19,14 @@ public class Arzt {
     @Column(name = "arztid", insertable = false, updatable = false)
     private Integer arztid;
 
+    @Column(name = "arztauswiesnummer", insertable = false, updatable = false)
+    private String arztuswiesnummer;
+
+
     @OneToOne
     @JoinColumn(name = "personid", insertable = false, updatable = false)
     private Person person;
     private Integer personid;
-
-    @OneToOne
-    @JoinColumn(name = "terminid", insertable = false, updatable = false)
-    private Termin termin;
-    private Integer terminid;
 
 
 }

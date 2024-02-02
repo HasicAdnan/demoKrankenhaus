@@ -28,10 +28,6 @@ public class Termin {
     @Column(name = "uhrzeit")
     private Time uhrzeit;
 
-    @OneToOne
-    @JoinColumn(name = "arztid", insertable = false, updatable = false)
-    private Arzt arzt;
-    private Integer arztid;
 
     @OneToOne
     @JoinColumn(name = "patientid", insertable = false, updatable = false)
@@ -42,6 +38,11 @@ public class Termin {
     @JoinColumn(name = "abteilungid", insertable = false, updatable = false)
     private Abteilung abteilung;
     private Integer abteilungid;
+
+
+    @ManyToOne
+    @JoinColumn(name = "arztid", insertable = false, updatable = false)
+    private Arzt arzt;
 
 
 }

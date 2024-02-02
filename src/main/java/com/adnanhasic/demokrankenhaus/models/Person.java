@@ -22,11 +22,6 @@ public class Person {
     @Column(name = "personid", insertable = false, updatable = false)
     private Integer personid;
 
-
-    @Column(name="name")
-    private String name;
-
-
     @Column(name = "vorname")
     private String vorname;
 
